@@ -1,12 +1,12 @@
 <template>
   <div class="com">
-     组件
+     我是子组件，{{age}}
   </div>
 </template>
 
 <script>
 export default {
-
+  props:['age']
 }
 </script>
 
