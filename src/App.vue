@@ -13,6 +13,7 @@ import HelloWorld from './components/HelloWorld.vue'
 import "./components/n"
 import ev  from './components/events.vue'
 import com from './components/com.vue'
+
 export default {
   name: 'app',
   components: { //自定义组件需要在这里添加才能用
