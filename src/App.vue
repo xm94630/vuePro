@@ -5,6 +5,7 @@
     <ev/>
     {{age}}
     <com :age='age' @xxx='yyy' />
+    <vuexx />
   </div>
 </template>
 
@@ -13,6 +14,7 @@ import HelloWorld from './components/HelloWorld.vue'
 import "./components/n"
 import ev  from './components/events.vue'
 import com from './components/com.vue'
+import vuexx from './components/vuex.vue'
 
 export default {
   name: 'app',
@@ -20,6 +22,7 @@ export default {
     HelloWorld,
     ev,
     com,  
+    vuexx
   },
   data:function(){
     return{
