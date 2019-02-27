@@ -23,6 +23,14 @@ const actions={
   decrement:({commit})=>{
     commit('decrement')
   }
+  
+  // 写成这样子也可以
+  // increment({commit}){
+  //   commit('increment')
+  // },
+  // decrement({commit}){
+  //   commit('decrement')
+  // }
 }
 
 export default new Vuex.Store({
