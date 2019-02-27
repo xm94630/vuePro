@@ -7,7 +7,7 @@ Vue.use(VueRouter)
 
 const routes=[
   {
-    path:"/pagea",
+    path:"/",
     component:pageA
   },
   {
