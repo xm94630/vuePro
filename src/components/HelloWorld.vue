@@ -2,6 +2,17 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h1 v-html="msg2" v-bind:xxx="xxx"></h1>
+    <div v-n="n">1111</div>
+    <div>道高一尺：{{nn}}</div>
+    <ul>
+      <li v-for="one in arr">{{one}}</li>
+    </ul>
+    <ul>
+      <template v-for="one in arr">
+        <li>***</li>
+        <li>{{one}}</li>
+      </template>
+    </ul>
   </div>
 </template>
 
@@ -18,7 +29,14 @@ export default {
   data:function(){
     return {
       msg2:'<div style="color:red">123</div>',
-      xxx:'haha'
+      xxx:'haha',
+      n:8,
+      arr:['aaa','bbb']
+    }
+  },
+  computed:{
+    nn:function(){
+      return this.n+10000
     }
   }
 }

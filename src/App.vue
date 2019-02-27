@@ -2,16 +2,22 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <ev/>
+    <com/>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-
+import "./components/n"
+import ev  from './components/events.vue'
+import com from './components/com.vue'
 export default {
   name: 'app',
-  components: {
-    HelloWorld
+  components: { //自定义组件需要在这里添加才能用
+    HelloWorld,
+    ev,
+    com,  
   }
 }
 </script>
