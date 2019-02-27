@@ -6,6 +6,8 @@
     {{age}}
     <com :age='age' @xxx='yyy' />
     <!--<vuexx />-->
+    <pagea />
+    <pageb />
   </div>
 </template>
 
@@ -16,6 +18,9 @@ import ev  from './components/events.vue'
 import com from './components/com.vue'
 //import vuexx from './components/vuex.vue'
 
+import pagea from './components/a.vue'
+import pageb from './components/b.vue'
+
 export default {
   name: 'app',
   components: { //自定义组件需要在这里添加才能用
@@ -23,6 +28,8 @@ export default {
     ev,
     com,  
     //vuexx
+    pagea,
+    pageb,
   },
   data:function(){
     return{
