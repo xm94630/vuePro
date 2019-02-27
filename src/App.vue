@@ -3,7 +3,8 @@
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
     <ev/>
-    <com :age='age'/>
+    {{age}}
+    <com :age='age' @xxx='yyy' />
   </div>
 </template>
 
@@ -21,7 +22,13 @@ export default {
   },
   data:function(){
     return{
-      age:'100岁'
+      age:'100'
+    }
+  },
+  methods:{
+    yyy:function(msg){
+      this.age++;
+      console.log(msg)
     }
   }
 }
